@@ -1,0 +1,20 @@
+<h1>{{ page.name }}</h1>
+<p>{{ page.url }}</p>
+<p>{{ page.date | date }}</p>
+
+<div *ngIf="page.modules">
+    <div class="module" *ngFor="let module of page.modules">
+    <div class="text" *ngIf="module.text">
+        <p>{{ module.text }}</p>
+    </div>
+    <div class="image" *ngIf="module.image">
+        <img src="{{ module.image.url }}" />
+    </div>
+    <div class="quote" *ngIf="module.quote">
+        {{ module.quote }}
+    </div>
+    <div class="video" *ngIf="module.video">
+        {{ module.video }}
+    </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<ul class="list">
+    <li *ngFor="let route of routeService.routes">
+        <a class="list-item" routerLink="{{ route.path }}" *ngIf="route.data.collection_id == 'Pages' && route.data.locale==currentLocale">
+            <span>{{ route.data.name }}</span>
+        </a>
+    </li>
+</ul>
+<select class="lang" (change)="onChange($event.target.value)">
+    <option value="{{ locale == 'en_US' ? '' : locale }}" *ngFor="let locale of routeService.locales" [selected]="locale==currentLocale">{{ locale }}</option>
+</select>
