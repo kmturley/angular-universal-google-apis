@@ -48,7 +48,7 @@ Then run the command to build static:
 
 Or to build with custom base url:
 
-    ng build --configuration=production --base-href https://angular-universal-google-apis.appspot.com
+    ng build --configuration=production --base-href https://kmturley.github.io/angular-universal-google-apis/frontend/dist/browser/
     ng run ng-universal-demo:server:production
     npm run webpack:server && npm run generate:prerender
 

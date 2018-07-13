@@ -10,7 +10,9 @@ package-lock.json
 /node_modules/
 /typings/
 /tsd_typings/
-/dist/
+/dist/server
+/dist/prerender.js
+/dist/server.js
 /dist-server/
 /compiled/
 
